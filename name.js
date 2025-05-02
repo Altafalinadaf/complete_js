@@ -12,3 +12,9 @@ console.log(typeof (num1))
 console.log(typeof (num2))
 console.log(typeof (num3))
 
+// console.log(str1.slice(4, -17) + str1.slice(3, 4) + str1.slice(2, 3) + str1.slice(1, 2) + str1.slice(0, 1))
+
+
+var str1= "apple,banana,orange"
+
+console.log(str1.slice(-15,-18,-1))
