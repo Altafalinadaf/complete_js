@@ -29,6 +29,10 @@ let num3 = 100_00_000
 console.log(typeof(c1));
 
 
+console.log(Number("10 33"));	 
+
+
+
 
 
 

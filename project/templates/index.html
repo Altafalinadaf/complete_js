@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Task Manager</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter a new task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        
+        <div id="task-list">
+            {% for task in tasks %}
+                <div class="task {% if task['done'] %}done{% endif %}" data-id="{{ task['id'] }}">
+                    <span>{{ task['content'] }}</span>
+                    <div class="actions">
+                        <button class="toggle-btn">{% if task['done'] %}Undo{% else %}Done{% endif %}</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
