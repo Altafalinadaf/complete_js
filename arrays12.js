@@ -37,7 +37,7 @@ console.log(arr6)
 const arr10 = ["John", "Peter"];
 const arr20 = ["Rohan", "Riya", "Rohit"];
 const arr40 = ["Robin", "Morgan"];
-const myChildren = arr10+arr20+arr40;
+const myChildren = arr10+arr20+arr4sssssss0;
 console.log(myChildren)
 
 const fruits1 = ["Banana", "Orange", "Apple"]
