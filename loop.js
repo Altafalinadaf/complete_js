@@ -8,7 +8,7 @@ for (i=0;i<=10;i=i+2){
 
 
 for (i in fruits){
-    console.log(fruits[i])
+    console.log(i)
 }
 
 for (i of fruits){
