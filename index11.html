@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>JavaScript Clock</h2>
+    <p>The time will update every second:</p>
+    <p id="clock"></p>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            document.getElementById("clock").innerHTML = now.toLocaleTimeString();
+        }
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>
