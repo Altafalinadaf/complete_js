@@ -4,3 +4,4 @@ let _a= 30
 console.log(a)
 console.log($a)
 console.log(_a)
+console,log(a)
