@@ -9,6 +9,7 @@ switch(5){
         console.log("case 3 will run")
         break
     default:
+        
         console.log("this one is default one")
 }
 
