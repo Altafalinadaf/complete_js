@@ -71,3 +71,7 @@ do{
     console.log(n)
     
 }while(n<=30);
+
+
+
+
