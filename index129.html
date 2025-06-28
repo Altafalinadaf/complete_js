@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p>You cannot evaluate code that contains a syntax error:</p>
+    <p id="demo"></p>
+    <script>
+        try {
+            alert('Yourname')
+        }
+        catch (err) {
+            document.getElementById("demo").innerHTML = err.name;
+        }
+    </script>
+
+</body>
+
+</html>

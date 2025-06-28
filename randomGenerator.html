@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Random Generator</title>
+        <style>
+            body{
+                text-align: center;
+            }
+            h1{
+                color: red;
+            }
+
+            p{
+                color: brown;
+            }
+            button{
+                color: blueviolet;
+                background-color: chartreuse;
+            }
+            button:hover{
+                color:black;
+                background-color: aquamarine;
+            }
+
+            h1:hover{
+                color: black;
+                font-size: 300%;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>Random Number Generator</h1>
+        <p>Random Number is : </p>
+        <p id="result"></p>
+
+        <button onclick="diceRoll()">Dice Roll</button>
+
+        <script>
+            function diceRoll(){
+                let dice = Math.floor(Math.random()*6)+1
+                let res = document.getElementById("result")
+                res.textContent="Dice Roll "+dice
+
+            }
+        </script>
+    </body>
+
+
+</html>

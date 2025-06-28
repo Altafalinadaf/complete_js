@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">You cannot convert a number to upper case:</p>
+    <script>
+        num =2;
+        try {
+            a = num.toUpperCase()
+            document.getElementById("demo").innerHTML = a
+        }
+        
+        catch (err) {
+            document.getElementById("demo").innerHTML = err.name;
+        }
+    </script>
+
+</body>
+
+</html>
